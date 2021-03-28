@@ -1,1 +1,1 @@
-# -fatihkgm-AuthenticationApp-With-Django-and-PostgreSQL
+# AuthenticationApp-With-Django-and-PostgreSQL
