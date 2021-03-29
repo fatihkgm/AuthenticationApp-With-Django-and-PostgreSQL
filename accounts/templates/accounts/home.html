@@ -1,0 +1,14 @@
+
+{% extends "accounts/base.html" %}
+{% block content %}
+
+<main role="main" class="container text-center">
+  <h1 class="mt-5">Hello there</h1>
+  <p class="lead">with this custom HTML and CSS.</p>
+  <p>
+    <a href="{% url 'login'%}" class="btn btn-lg btn-primary">Login Here</a>
+    <a href="{% url 'register'%}" class="btn btn-lg btn-primary">Register Here</a>
+  </p>
+</main>
+
+{% endblock content %}

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,7 +34,7 @@
     <!-- Bootstrap core CSS -->
 
     <!-- Custom styles for this template -->
-    <link href="/css/signin.css" rel="stylesheet" />
+    <link href="{% static 'accounts/main.css' %} " rel="stylesheet" />
   </head>
 
   <body>
@@ -49,7 +50,7 @@
               target="blank"
             >
               <img
-                src="/images/felix.png"
+                src="{% static 'accounts/felix.png' %}"
                 alt=""
                 class="d-inline-block align-top"
               />
@@ -100,21 +101,15 @@
     </header>
 
 
-<main role="main" class="container text-center">
-  <h1 class="mt-5">Hello there</h1>
-  <p class="lead">with this custom HTML and CSS.</p>
-  <p>
-    <a href="/users/login" class="btn btn-lg btn-primary">Login Here</a>
-    <a href="/users/register" class="btn btn-lg btn-primary">Register Here</a>
-  </p>
-</main>
+   {% block content %}
+   {% endblock %}
 
 
 
     
   <footer class="footer text-center ">
     <div class="container dark">
-      <span>Made  with  <span class="fab fa-canadian-maple-leaf"></span> | <a href="https://fgokmen.herokuapp.com/">the KGM</a> |<span class="fab fa-canadian-maple-leaf"></span> 2021.</span>
+      <span>Made  with  <span class="fab fa-canadian-maple-leaf"></span> | <a href="https://fgokmen.herokuapp.com/" target='blank' >the KGM</a> |<span class="fab fa-canadian-maple-leaf"></span> 2021.</span>
     </div>
   </footer>
   
