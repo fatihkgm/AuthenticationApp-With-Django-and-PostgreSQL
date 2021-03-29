@@ -71,30 +71,48 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
+            {% if user.is_authenticated %}
+              <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://github.com/fatihkgm/AuthenticationApp-With-Node-JS-and-PostgreSQL"
+                target="_blank"
+                >📌 see NODEJS-AUTHENTICATIONAPP<span class="sr-only">(current)</span></a
+              >
+            </li> 
+             <li class="nav-item link">
+              <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link link sign-out"
+                > LogOut</a>
+                <form action="{% url 'logout' %}" id='logout' medhot="POST">
+                  {% csrf_token %}
+                  <input type="hidden">
+                </form>
+              
+            </li>
+
+              {% else %}
             <li class="nav-item active">
               <a
                 class="nav-link"
                 href="https://fgokmen.herokuapp.com/aboutme"
                 target="_blank"
-                >Resume <span class="sr-only">(current)</span></a
-              >
+                >Resume <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item link">
               <a
                 class="nav-link link"
                 href="https://fgokmen.herokuapp.com/"
                 target="blank"
-                >PortFolia</a
-              >
+                >PortFolia</a>
             </li>
             <li class="nav-item link">
               <a
                 class="nav-link link"
                 href="https://www.linkedin.com/in/fgokmen/"
                 target="_blank"
-                >Linkedin</a
-              >
+                >Linkedin</a>
             </li>
+            {% endif %}
           </ul>
         </div>
       </nav>

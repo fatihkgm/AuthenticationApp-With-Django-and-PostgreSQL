@@ -11,7 +11,7 @@
     width="72"
     height="72"
   />
-  <form class="form-register" actio="{% url 'register' %}"  method="POST">
+  <form class="form-register" action="{% url 'register' %}"  method="POST">
     {% csrf_token %}
     <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
     {% if messages %}
