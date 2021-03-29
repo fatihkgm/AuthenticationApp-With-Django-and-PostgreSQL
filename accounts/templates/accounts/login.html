@@ -1,6 +1,9 @@
 
 {% extends "accounts/base.html" %}
 {% load static %}
+{% load socialaccount %}
+{% providers_media_js%}
+
 {% block content %}
    <div class="text-center">
   <img
@@ -57,8 +60,8 @@
     />
     <br />
     <input type="submit" value="Login" class="btn btn-lg btn-success btn-block">
-    <input type="submit" value="Facebook" class="btn btn-lg btn-primary btn-block">
-    <input type="submit" value="Google" class="btn btn-lg btn-danger btn-block">
+    <a href="{% provider_login_url 'facebook' method='oauth2' %}" ><input  value="Facebook" class="btn btn-lg btn-primary btn-block"></a>
+    <a href="" ><input type="submit" value="Google" class="btn btn-lg btn-danger btn-block"></a>
      
     </input>
     <p class="help-block mt-5 mb-3 text-muted">
