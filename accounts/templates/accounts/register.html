@@ -11,7 +11,8 @@
     width="72"
     height="72"
   />
-  <form class="form-register"   method="POST">
+  <form class="form-register" actio="{% url 'register' %}"  method="POST">
+    {% csrf_token %}
     <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
     
     <label for="name" class="sr-only">Name</label>
@@ -61,7 +62,11 @@
 
     </input>
     
-  </form>
+  </form><br>
+  <p class="help-block  mb-3 text-muted">
+      Already registered...!
+      <a href="{% url 'login' %}"> Sign In </a>
+    </p>
 </div>
 
 {% endblock content %}
