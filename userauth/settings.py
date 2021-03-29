@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mkcw%i)@a=v&wxw!b=os613)@)f%z%8d=n%s!13ggdy4lw*#^$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'userauth.urls'
@@ -83,16 +85,18 @@ WSGI_APPLICATION = 'userauth.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_db',
-        'USER': 'postgres',
-        'PASSWORD': '0520z',
-        'HOST': 'localhost',
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'django_db',
+#        'USER': 'postgres',
+#        'PASSWORD': '0520z',
+#        'HOST': 'localhost',
+#
+#    }
+#}
 
-    }
-}
+DATABASES = {'default' : dj_database_url.config(default='postgres://postgres:0520z@localhost/django_db')}
 
 
 # Password validation
@@ -139,3 +143,8 @@ MESSAGE_TAGS = {
 }
 
 SITE_ID = 1
+
+STATICFILES_STORAGE  = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+
