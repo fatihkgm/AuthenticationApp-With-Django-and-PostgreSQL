@@ -1,0 +1,315 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "dsd",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$QWGHEOU40U9B$tT1RbdyhQyHCPm+KEZmAjSenaPlEQ7oOMSLnAKZeH2w=",
+        "last_login": "2021-03-29T21:29:35.888Z",
+        "is_superuser": true,
+        "username": "TestUser",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-29T17:35:32.901Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$WfJ1RwLFSTdl$HsWSB2ip/Zb5r2SQLIi+vhLfydSOpxrfaOE0erhM1U0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "felixgokmen@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T17:37:05.005Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$E1gnQWhCteEG$2QnNTZ1yEd4UV9NkaTL9RZ9mL0958w+X0zXC/oPSecQ=",
+        "last_login": "2021-03-29T18:45:10.579Z",
+        "is_superuser": false,
+        "username": "felix",
+        "first_name": "",
+        "last_name": "",
+        "email": "sasa@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T18:45:10.376Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$Bynv7fQMhZ8t$iigFC1NGnsXBvz9ZZxBvkFe56uf4R7PtIBJzuHIbWdI=",
+        "last_login": "2021-03-29T18:46:00.218Z",
+        "is_superuser": false,
+        "username": "test1",
+        "first_name": "",
+        "last_name": "",
+        "email": "test1@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T18:46:00.095Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$bkQ9ajMpjHdg$L53H6WszBApPm80pwiwNSjGX/HzBAcA2/gv2rOOddTs=",
+        "last_login": "2021-03-29T20:30:07.762Z",
+        "is_superuser": false,
+        "username": "test2",
+        "first_name": "",
+        "last_name": "",
+        "email": "test2@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T18:49:42.893Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$kePXPAdbAzpq$O7qSkR4RTKgiqBo8711SPeuVpT1QcbbOocUy9vzFBK8=",
+        "last_login": "2021-03-29T19:14:32.565Z",
+        "is_superuser": false,
+        "username": "test3",
+        "first_name": "",
+        "last_name": "",
+        "email": "test3@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T19:14:32.353Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$zbwOtaQDnhFZ$qK2TNhfC2wr8Wd4oHeReKxBZe/hPoEVzSbF7K/UVL/w=",
+        "last_login": "2021-03-29T19:47:25.299Z",
+        "is_superuser": false,
+        "username": "test5",
+        "first_name": "",
+        "last_name": "",
+        "email": "test5@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T19:47:25.086Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!qiNzjzCfZrO7fn2lGvo2NGtEn5Tn1KwxNfxnKt3s",
+        "last_login": "2021-03-29T21:46:52.476Z",
+        "is_superuser": false,
+        "username": "felix4",
+        "first_name": "Felix",
+        "last_name": "Gokmen",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-29T21:26:09.114Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "27t0wo21gdp8uqujoc73p9fd8jdizqkd",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIkJiMWlWMHRXbmZLbyJdfQ:1lQzMu:v28PAEwKThQpLH7wkIYFlqvk9I2q2-OD4Xi_FXUrZ3c",
+        "expire_date": "2021-04-12T21:24:16.426Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "umeuyebjeya83thl7lxmyw2zyhuo9c7m",
+    "fields": {
+        "session_data": ".eJxVjDsKwzAQBe-iOoiVrc86ZXqfQax3pchJsMGfKuTuscBFUj14M8xbRdq3Evc1LXEUdVWoLr_fQPxMUwXyoOk-a56nbRkHXRV90lX3s6TX7XT_AoXWUrONR3QcjhFj2i6DtOAkm4ahsz4YS4A-U5MlOzpExx2yRQQbgH1Sny-5Czb8:1lQzim:X92ujTk_znL57GJY5BXGMJa6Mta3QyQzvVxMyN7_hsY",
+        "expire_date": "2021-04-12T21:46:52.480Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "localhost:8000",
+        "name": "localhost:8000"
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "facebook",
+        "name": "Facebook login",
+        "client_id": "486272636057157",
+        "secret": "7799b24bba53f4dd2e848138d5422798",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 2,
+    "fields": {
+        "provider": "google",
+        "name": "Google Login",
+        "client_id": "1018397905956-jb32urh6484889rtp7v4rvho76psci3i.apps.googleusercontent.com",
+        "secret": "CZucTfBdmCwzNUEthwEjLIVZ",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialaccount",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "felix4"
+        ],
+        "provider": "facebook",
+        "uid": "909061083282290",
+        "last_login": "2021-03-29T21:46:52.434Z",
+        "date_joined": "2021-03-29T21:26:09.126Z",
+        "extra_data": "{\"id\": \"909061083282290\", \"name\": \"Felix Gokmen\", \"first_name\": \"Felix\", \"last_name\": \"Gokmen\"}"
+    }
+},
+{
+    "model": "socialaccount.socialtoken",
+    "pk": 1,
+    "fields": {
+        "app": 1,
+        "account": 1,
+        "token": "EAAG6Qyu8dkUBALobzpZCZBvEM70b4Ja6oYEpjshp2ZBaSsuzLBvchlZCXRQEqzsl9cyzKaJv2FAZBIxAts42OU1CQPSSjTsxfnZAL1zZCMVnRkBFDJiKleThUoIDPQHkOdzNdoLK9ncwqSuZAtnopcIO6ZAPwyEAgryZB6P0hIwHQGSU200ZAk498R3",
+        "token_secret": "",
+        "expires_at": "2021-05-28T21:26:09.152Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-03-29T17:36:43.516Z",
+        "user": [
+            "TestUser"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "dsd",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-03-29T17:37:05.122Z",
+        "user": [
+            "TestUser"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "felixgokmen@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-03-29T21:07:53.211Z",
+        "user": [
+            "TestUser"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-03-29T21:08:51.856Z",
+        "user": [
+            "TestUser"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "localhost:8000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-03-29T21:39:34.299Z",
+        "user": [
+            "TestUser"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "2",
+        "object_repr": "Google Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
