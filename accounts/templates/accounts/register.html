@@ -1,6 +1,8 @@
 
 {% extends "accounts/base.html" %}
 {% load static %}
+{% load socialaccount %}
+{% providers_media_js%}
 {% block content %}
 
 <div class="text-center">
@@ -25,7 +27,7 @@
                     {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
                         Error:
                     {% else %}
-                        {{mesaage.tags|title}}
+                        {{message.tags|title}}
                     {% endif %}
                   </strong>
                   {{message}}
@@ -77,10 +79,12 @@
     <input
       type="submit"
       value="Register"
-      class="btn btn-lg btn-primary btn-block"
+      class="btn btn-lg btn-success  btn-block"
     >
 
-    </input>
+    </input><br>
+    <a href="{% provider_login_url 'facebook' method='oauth2' %}" ><input  value="Facebook" class="btn btn-lg btn-primary btn-block"></a><br>
+    <a href="{% provider_login_url 'google' %}" ><input  value="Google" class="btn btn-lg btn-danger btn-block"></a>
     
   </form><br>
   <p class="help-block  mb-3 text-muted">

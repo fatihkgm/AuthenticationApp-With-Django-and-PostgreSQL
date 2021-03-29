@@ -13,7 +13,7 @@
                     {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
                         Error:
                     {% else %}
-                        {{mesaage.tags|title}}
+                        {{message.tags|title}}
                     {% endif %}
                   </strong>
                   {{message}}
@@ -22,10 +22,21 @@
         {% endfor %}
 
     {% endif %}
-      <h1 class="mt-5">Welcome</h1>
-        <p class="lead">It is</p>
+      <h1 class="mt-5">Hello {{user.username}}</h1>
+        <p class="lead">This site Developed " Django Project with PostgreSQL & Deploy on Heroku "</p>
         <p>
-          <a href="/users/logouts">LogOut</a>
+          <a href="https://github.com/fatihkgm/AuthenticationApp-With-Node-JS-and-PostgreSQL">Please have a look my NODEJS-AUTHENTICATIONAPP used and developed by PostgreSQL for task 2</a><br>
+           <a href="https://fgokmen.herokuapp.com/gradvisory">Capstone Project "Developed tiwh 4 teams" - Django and deployed Heroku </a><br>
+            <a href="https://fgokmen.herokuapp.com/post">Built enterprise-level React applications and deployed them to Heroku. </a><br><br>
+
+            <p>Hello Jheel Patel,</p> <br>
+
+            <p>Thank you for taking the time to learn more about my candidacy. I look forward to speaking soon and learning more about LearnerIA.</p>
+            <p>i was going to buy bootstrap template and make my tasks more stylish,however i had  other projects and assignments to be completed .</p><b>
+
+
+
+
       </p>
   </main>
 {% endblock content %}
