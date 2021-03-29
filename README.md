@@ -2,7 +2,7 @@
 
 
 📌 AdminPanel
-    ✔️UserName : Felix
-    ✔️email: felixgokmen@gmail.com
-    ✔️password: 321
+    ✔️UserName : TestUser
+    ✔️email: test@gmail.com
+    ✔️password: qaz321
 
