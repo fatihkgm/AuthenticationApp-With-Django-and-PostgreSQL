@@ -8,6 +8,9 @@ def home(request):
 	return render (request , 'accounts/home.html' )
 
 def login (request):
+	if request.medhod == 'POST':
+		username = request.POST['username']
+
 	return render (request , 'accounts/login.html' )
 
 def register (request):
@@ -28,7 +31,7 @@ def register (request):
 		    	else:
 		    		user = User.objects.create_user(username = username,email=email , password=password)
 		    		auth.login(request,user)
-		    		messages.success(request, 'You can login now')
+		    		messages.success(request, 'Welcome to your panel')
 		    		return redirect('dashboard')
 		    		user.save()
 		    		messages.success(request, 'You are registered succesfully')
