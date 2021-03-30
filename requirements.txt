@@ -53,7 +53,7 @@ diff-match-patch @ file:///tmp/build/80754af9/diff-match-patch_1594828741838/wor
 distlib==0.3.1
 distributed @ file:///opt/concourse/worker/volumes/live/0a62cbc9-591a-4d87-7487-c239010d690a/volume/distributed_1594750312816/work
 dj-database-url==0.5.0
-Django==3.1.6
+Django==3.1.7
 django-allauth==0.44.0
 django-ckeditor==6.0.0
 django-crispy-forms==1.11.0
